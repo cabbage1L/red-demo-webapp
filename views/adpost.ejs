@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+</head>
+
+<body>
+    <form action="/admin/adpost" method="post">
+        <label for="title">title:</label>
+        <input type="" name="title" id="title"><br><br>
+
+        <label for="content">content:</label>
+        <input type="" name="content" id="content"><br><br>
+        <button type="submit">Add</button> 
+    </form>
+    <h3>User ID <%= UserData._id %></h3>
+    <a href="/">Go to Home Page</a>
+
+    <form action="/admin/update" method="post">
+        <label for="id">id:</label>
+        <input type="" name="id" id="id"><br><br>
+        <label for="title">title:</label>
+        <input type="" name="title" id="title"><br><br>
+        <label for="content">content:</label>
+        <input type="" name="content" id="content"><br><br>
+        <button type="submit">update</button> 
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+
+</html>

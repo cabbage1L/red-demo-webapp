@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Speech</title>
+</head>
+
+<body>
+    <h1>Text to Speech Ejsssssssss</h1>
+
+    <% if (loggedIn) { %>
+        <a  href="/logout">Logout</a>
+    <% } %>
+
+    <% if (!loggedIn) { %>
+        <a href="/login">Sign In</a>
+        <a href="/register">Sign Up</a>
+    <% } %>
+
+    <div>
+        <h1 >Home Page</h1>
+        <h3>User ID <%= UserData._id %></h3>
+        <p><a href="#" >Welcome, <%= UserData.email %></a></p>
+    </div>
+    <a  href="/adpost">adpost</a>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+
+</html>
